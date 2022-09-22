@@ -7,15 +7,19 @@
   --white-color: #ffffff;
   --text-secondary-bg-color: #f5f4fa;
   --black-color: #000000;
-  --focus-btn-color: #188CE8;
+  --focus-btn-color: #188ce8;
   --tel-mail-color: rgba(255, 255, 255, 0.6);
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
 }
@@ -111,7 +115,6 @@ body {
   background-color: var(--primary-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
- 
 }
 
 .hero-title {
@@ -125,7 +128,7 @@ body {
   width: 696px;
   height: 120px;
   margin: 0 auto;
-   }
+}
 
 .hero-btn {
   font-family: inherit;
@@ -138,7 +141,7 @@ body {
   cursor: pointer;
   margin: 0 auto;
   display: block;
-  }
+}
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -150,7 +153,7 @@ body {
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
-  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -187,7 +190,7 @@ body {
 
 .feature {
   padding-bottom: 94px;
-  }
+}
 .feature-title {
   font-weight: 700;
   font-size: 36px;
@@ -203,7 +206,7 @@ body {
   background-color: var(--text-secondary-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
-  }
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -214,14 +217,14 @@ body {
 }
 .team-bottom {
   padding: 30px 70px;
-
 }
 .team-title-employee {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .team-title-text {
   font-weight: 400;
@@ -251,7 +254,6 @@ body {
   color: var(--accent-color);
   margin-bottom: 20px;
   display: block;
-  
 }
 
 .footer-logo-second {
@@ -260,7 +262,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  
 }
 
 .footer-addres {
@@ -308,6 +309,8 @@ body {
 
 .main-contant {
   background-color: var(--white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-btn .all,
@@ -324,20 +327,32 @@ body {
   color: var(--title-text-color);
   background-color: var(--text-secondary-bg-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 
- .all:hover,
- .all:focus,
- .web:hover,
- .web:focus,
- .app:hover,
- .app:focus,
- .design:hover,
- .design:focus,
- .market:hover,
- .market:focus {
+.all:hover,
+.all:focus,
+.web:hover,
+.web:focus,
+.app:hover,
+.app:focus,
+.design:hover,
+.design:focus,
+.market:hover,
+.market:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.all {
+  padding: 6px 25px;
+}
+
+.web,
+.app,
+.design,
+.market {
+  padding: 6px 22px;
 }
 
 .portfolio-title {
@@ -346,6 +361,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
@@ -354,4 +370,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.portfolio-card {
+  padding: 20px 24px;
 }
