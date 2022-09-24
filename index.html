@@ -11,19 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav>
+      <div class="container header-container">
+        <nav class="header-nav">
           <a class="header-logo link" href="./index.html"
             >Web<span class="header-logo-second">Studio</span>
           </a>
@@ -40,16 +34,17 @@
           </ul>
         </nav>
         <ul class="header-contacs list">
-          <li>
-            <a class="header-contacs-mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header-contacs-tel link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
+            <li>
+              <a class="header-contacs-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="header-contacs-tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </div>
         </ul>
       </div>
     </header>
@@ -65,37 +60,40 @@
       <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Чим ми займаємося</h2>
-          <ul class="list">
-            <li>
-              <h3 class="benefits-title">увага до деталей</h3>
-              <p class="benefits-text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
+          <ul class="benefits-list list">
+              <li class="benefits-item">
+                <h3 class="benefits-title">увага до деталей</h3>
+                  <p class="benefits-text">
+                    Ідейні міркування, і навіть початок повсякденної роботи з
+                    формування позиції.
+                  </p>                
+              </li>
+  
+              <li class="benefits-item">
+                <h3 class="benefits-title">пунктуальність</h3>
+                <p class="benefits-text">
+                  Завдання організації, особливо рамки і місце навчання кадрів
+                  тягне у себе.
+                </p>
+              </li>
+  
+              <li class="benefits-item">
+                <h3 class="benefits-title">планування</h3>
+                <p class="benefits-text">
+                  Так само консультація з широким активом значною мірою зумовлює.
+                </p>
+              </li>
+  
+              <li class="benefits-item">
+                <h3 class="benefits-title">сучасні технології</h3>
+                <p class="benefits-text">
+                  Значимість цих проблем настільки очевидна, що реалізація
+                  планових завдань.
+                </p>
+              </li>
+            </div>
 
-            <li>
-              <h3 class="benefits-title">пунктуальність</h3>
-              <p class="benefits-text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </li>
-
-            <li>
-              <h3 class="benefits-title">планування</h3>
-              <p class="benefits-text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-
-            <li>
-              <h3 class="benefits-title">сучасні технології</h3>
-              <p class="benefits-text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
+            
           </ul>
         </div>
       </section>
@@ -103,7 +101,7 @@
       <section class="feature">
         <div class="container">
           <h2 class="feature-title">Чим ми займаємося</h2>
-          <ul class="list">
+          <ul class="feture-list list">
             <li>
               <img src="./images/photo1.img.jpg" alt="Планшет" width="370" />
             </li>
@@ -120,7 +118,7 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="team-cards list">
             <li class="team-list">
               <img src="./images/igor.img.jpg" alt="Ігор" width="270" />
               <div class="team-bottom">

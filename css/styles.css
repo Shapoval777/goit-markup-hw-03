@@ -9,6 +9,8 @@
   --black-color: #000000;
   --focus-btn-color: #188ce8;
   --tel-mail-color: rgba(255, 255, 255, 0.6);
+  --header-border-color: #ececec;
+  --cards-border-color: #EEEEEE;
 }
 
 h1,
@@ -26,6 +28,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -46,7 +50,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
   margin: 0 auto;
 }
 
@@ -55,7 +58,19 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--header-border-color);
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: start;
+}
+
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -73,12 +88,23 @@ body {
   color: var(--black-color);
 }
 
+.header-list {
+  margin-left: 93px;
+
+  display: flex;
+  align-items: center;
+}
+
 .header-item .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-contacs-mail,
@@ -107,6 +133,16 @@ body {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+
+.header-contacs {
+  margin-left: auto;
+
+  display: flex;
+}
+
+.header-contacs-mail {
+  margin-right: 50px;
 }
 
 /*----------- HERO ----------- */
@@ -140,12 +176,16 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
   margin: 0 auto;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
   display: block;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--focus-btn-color);
+  border-radius: 0;
 }
 
 /*----------- BENEFITS -----------*/
@@ -168,6 +208,18 @@ body {
   margin: -1px;
 }
 
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.benefits-item {
+  flex-basis: calc(100% / 4 - 30px);
+
+  margin-right: 30px;
+}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -183,6 +235,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
 
@@ -198,6 +251,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.feture-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*------------- TEAM ----------------*/
@@ -214,9 +273,19 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -30px;
+}
+
 .team-bottom {
-  padding: 30px 70px;
+  padding: 30px 0;
+  text-align: center;
 }
 .team-title-employee {
   font-weight: 500;
@@ -236,6 +305,8 @@ body {
 
 .team-list {
   background-color: var(--white-color);
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
 }
 
 /*------------- FOOTER ------------*/
@@ -313,11 +384,17 @@ body {
   padding-bottom: 94px;
 }
 
-.portfolio-btn .all,
-.portfolio-btn .web,
-.portfolio-btn .app,
-.portfolio-btn .design,
-.portfolio-btn .market {
+.portfolio-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -328,31 +405,19 @@ body {
   background-color: var(--text-secondary-bg-color);
   cursor: pointer;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
-.all:hover,
-.all:focus,
-.web:hover,
-.web:focus,
-.app:hover,
-.app:focus,
-.design:hover,
-.design:focus,
-.market:hover,
-.market:focus {
+.card:hover,
+.card:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
 
-.all {
-  padding: 6px 25px;
-}
-
-.web,
-.app,
-.design,
-.market {
-  padding: 6px 22px;
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-title {
@@ -374,4 +439,6 @@ body {
 
 .portfolio-card {
   padding: 20px 24px;
+  border: 1px solid var(--cards-border-color);
+  border-top-style: none;
 }
